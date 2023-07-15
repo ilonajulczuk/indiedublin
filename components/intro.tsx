@@ -7,14 +7,14 @@ const Intro = () => {
   return (
     <section className="flex-col flex mt-16 md:mt-20 mb-16 md:mb-12">
       <h1 className="text-6xl md:text-8xl font-bold  md:text-left tracking-tighter leading-tight">
-        Indie Hackers Dublin
+        Indie Hackers Dublin ☘️
       </h1>
       <div className='flex flex-col'>
         <h2 className="text-left text-xl md:text-3xl my-5">
           Building a business is hard, but much more fun with the right community!
         </h2>
         <p className='text-left my-2'>
-          Welcome to the Ireland's #1 Indie Hackers community.
+          Welcome to the Ireland's #1 community of independent tech entrepreneurs!
         </p>
         <h4 className="text-left text-xl my-2 mt-4"> Who are indie hackers?</h4>
         <ul className='list-disc list-inside'>
