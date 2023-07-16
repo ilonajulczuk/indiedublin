@@ -1,4 +1,8 @@
-# A statically generated blog example using Next.js, Markdown, and TypeScript
+# indiedublin.com
+
+Welcome to the github repo for [indiedublin.com](https://indiedublin.com)!
+
+## Tech stack
 
 This website is based on [NextJS Blog Starter with Typescript and Markdown](https://github.com/vercel/next.js/tree/canary/examples/blog-starter).
 
