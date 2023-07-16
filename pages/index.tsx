@@ -6,6 +6,9 @@ import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import Post from '../interfaces/post'
+import GreenLink from '../components/green-link'
+import Image from 'next/image'
+
 
 type Props = {
   allPosts: Post[]
@@ -24,16 +27,48 @@ export default function Index({ allPosts }: Props) {
           <Intro />
 
           <div className="">
-              <div className="py-8 lg:py-28 flex flex-col">
-                <h4 className="text-left text-5xl md:text-7xl font-bold my-2 mt-4">Sounds interesting?</h4>
 
+            <div className="py-8 lg:py-28 flex flex-col">
+
+              <h4 className="text-left text-5xl md:text-7xl font-bold my-2 mt-4">Sounds interesting?</h4>
+
+              <div className='flex flex-col lg:flex-row lg:items-center'>
                 <p className='text-left my-2'>
-                  Join our <a href="https://www.meetup.com/indie-hackers-dublin/" target='_blank' className='underline underline-offset-2 text-blue-600'>meetups</a> and <a href="https://discord.gg/Y4hvQJ2n6t" className='underline underline-offset-2 text-blue-600' target='blank_'>discord</a>. Good vibes only!
+                  Join our casual coffee <GreenLink href="https://www.meetup.com/indie-hackers-dublin/">meetups</GreenLink> and <GreenLink href="https://discord.gg/Y4hvQJ2n6t">discord</GreenLink>. Good vibes only!
                 </p>
+                <Image
+                  src='/assets/coffee.png'
+                  alt={`Coffee background image`}
+                  objectFit='cover'
+                  width={300}
+                  height={300}
+                  style={{ 'zIndex': -10 }}
+                />
               </div>
+
+            </div>
           </div>
 
-          <h2 className="mt-12 md:mt-24 mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">From our blog</h2>
+          <div className="py-4 flex flex-col relative">
+
+          </div>
+          <div className='flex gap-2 lg:gap-6 items-center'>
+          <Image
+            className='order-3 lg:order-1'
+              src='/assets/keyboard.png'
+              alt={`keyboard background image`}
+              // layout='fill'
+              objectFit='cover'
+              width={200}
+              height={100}
+            />
+            <h2 className="order-2 my-12 md:my-24 mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">From our blog</h2>
+           
+          </div>
+          <div className="py-4 flex flex-col relative">
+
+          </div>
+
           {heroPost && (
             <HeroPost
               title={heroPost.title}

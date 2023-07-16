@@ -16,3 +16,35 @@
 .markdown h3 {
   @apply text-2xl mt-8 mb-4 leading-snug;
 }
+
+.markdown a {
+  color: green;
+  text-decoration: underline;
+}
+
+.markdown blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 0px;
+  padding: 1em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+.markdown blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  margin-top: 0.4em;
+  vertical-align: -0.4em;
+}
+
+.markdown blockquote p {
+  display: inline;
+}
+
+.markdown ul {
+  list-style: disc;
+    margin: 1em;
+}

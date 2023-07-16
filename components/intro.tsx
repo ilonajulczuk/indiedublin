@@ -2,6 +2,8 @@ import { CMS_NAME } from '../lib/constants'
 import Link from 'next/link'
 import Image from 'next/image'
 import cn from 'classnames'
+import GreenLink from './green-link'
+
 
 const Intro = () => {
   return (
@@ -24,7 +26,7 @@ const Intro = () => {
           </li>
         </ul>
         <p className='text-left my-4'>
-          Interested? Join our <a href="https://www.meetup.com/indie-hackers-dublin/" target='_blank' className='underline underline-offset-2 text-blue-600'>meetups</a> and <a href="https://discord.gg/Y4hvQJ2n6t" className='underline underline-offset-2 text-blue-600' target='blank_'>discord</a>!
+          Interested? Join our <GreenLink href="https://www.meetup.com/indie-hackers-dublin/">meetups</GreenLink> and <GreenLink href="https://discord.gg/Y4hvQJ2n6t">discord</GreenLink>!
         </p>
 
       </div>

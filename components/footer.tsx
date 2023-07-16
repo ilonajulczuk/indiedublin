@@ -3,7 +3,7 @@ import { EXAMPLE_PATH } from '../lib/constants'
 
 const Footer = () => {
   return (
-    <footer className="bg-green-200 border-t border-green-300">
+    <footer className="bg-[#0080006e] border-t border-green-300">
       <Container>
         <div className="py-28 flex flex-col lg:flex-row items-center">
           <h3 className="text-md lg:text-md font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
