@@ -11,7 +11,7 @@ const Intro = () => {
       <h1 className="text-6xl md:text-8xl font-bold  md:text-left tracking-tighter leading-tight">
         Indie Hackers Dublin ☘️
       </h1>
-      <div className='flex flex-col'>
+      <div className='flex flex-col gap-2'>
         <h2 className="text-left text-xl md:text-3xl my-5">
           Building a business is hard, but much more fun with the right community!
         </h2>
@@ -25,7 +25,12 @@ const Intro = () => {
           <li>People seeking financial independence, creative freedom, and the ability to work on their own schedule
           </li>
         </ul>
-        <p className='text-left my-4'>
+        <h4 className="text-left text-xl my-2 mt-4">Why join?</h4>
+        <p >The goal of this community is to make its members more successful as independent entrepreneurs.</p>
+        <p>We do this by helping each other out.</p>
+        <p>You can use this community to share your challenges, brainstorm solutions, improve your skills, socialize with similar people, get inspired and have fun on your journey!</p>
+        
+        <p className='text-left my-2'>
           Interested? Join our <GreenLink href="https://www.meetup.com/indie-hackers-dublin/">meetups</GreenLink> and <GreenLink href="https://discord.gg/Y4hvQJ2n6t">discord</GreenLink>!
         </p>
 
