@@ -28,33 +28,42 @@ export default function Index({ allPosts }: Props) {
 
           <div className="">
 
-            <div className="py-8 lg:py-28 flex flex-col">
+            <div className="py-2 lg:py-12 flex flex-col gap-2">
 
-              <h4 className="text-left text-5xl md:text-7xl font-bold my-2 mt-4">Sounds interesting?</h4>
+              <h4 className="text-left text-3xl font-bold my-4 mt-4">Who are indie hackers?</h4>
+              <ul className='list-disc list-inside mb-8'>
+                <li>People building an online project that can generate revenue
+                </li>
+                <li>People seeking financial independence, creative freedom, and the ability to work on their own schedule
+                </li>
+              </ul>
 
-              <div className='flex flex-col lg:flex-row lg:items-center'>
-                <p className='text-left my-2'>
-                  Join our casual coffee <GreenLink href="https://www.meetup.com/indie-hackers-dublin/">meetups</GreenLink> and <GreenLink href="https://discord.gg/Y4hvQJ2n6t">discord</GreenLink>. Good vibes only!
-                </p>
-                <Image
-                  src='/assets/coffee.png'
-                  alt={`Coffee background image`}
-                  objectFit='cover'
-                  width={300}
-                  height={300}
-                  style={{ 'zIndex': -10 }}
-                />
-              </div>
 
+              <h4 className="text-left text-3xl font-bold my-4 mt-4">Supportive local community</h4>
+              <p >The goal of this community is to make its members more successful as independent entrepreneurs.</p>
+              <p>We do this by helping each other out.</p>
+              <p>You can use this community to share your challenges, brainstorm solutions, improve your skills, socialize with similar people, get inspired and have fun on your journey!</p>
+              <p className='text-left my-2'>
+                Interested? Join our casual coffee <GreenLink href="https://www.meetup.com/indie-hackers-dublin/">meetups</GreenLink> and <GreenLink href="https://discord.gg/Y4hvQJ2n6t">discord</GreenLink>. Good vibes only!
+              </p>
+              <Image
+                src='/assets/coffee.png'
+                alt={`Coffee background image`}
+                objectFit='cover'
+                width={300}
+                height={300}
+                style={{ 'zIndex': -10 }}
+              />
             </div>
+
           </div>
 
           <div className="py-4 flex flex-col relative">
 
           </div>
           <div className='flex gap-2 lg:gap-6 items-center'>
-          <Image
-            className='order-3 lg:order-1'
+            <Image
+              className='order-3 lg:order-1'
               src='/assets/keyboard.png'
               alt={`keyboard background image`}
               // layout='fill'
@@ -63,7 +72,7 @@ export default function Index({ allPosts }: Props) {
               height={100}
             />
             <h2 className="order-2 my-12 md:my-24 mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">From our blog</h2>
-           
+
           </div>
           <div className="py-4 flex flex-col relative">
 
