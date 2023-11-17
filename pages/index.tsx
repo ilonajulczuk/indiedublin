@@ -8,6 +8,7 @@ import Head from 'next/head'
 import Post from '../interfaces/post'
 import GreenLink from '../components/green-link'
 import Image from 'next/image'
+import ConvertkitForm from '../components/convertkitform'
 
 
 type Props = {
@@ -58,8 +59,8 @@ export default function Index({ allPosts }: Props) {
 
           </div>
 
-          <div className="py-4 flex flex-col relative">
-
+          <div className="py-12 flex flex-col relative items-center convertkit">
+            <ConvertkitForm />
           </div>
           <div className='flex gap-2 lg:gap-6 items-center'>
             <Image
